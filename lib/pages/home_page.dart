@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
-// import '../components/grocery_item_tile.dart';
-// import '../model/cart_model.dart';
-// import 'cart_page.dart';
+import 'package:grocery_store/componenets/grocery_item_tile.dart';
+import '../model/cart_model.dart';
+import 'cart_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
