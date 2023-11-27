@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
               //   borderRadius: BorderRadius.circular(12),
               // ),
               child: IconButton(
-                icon: Icon(Icons.person,color: Color.fromARGB(255, 31, 55, 155),size: 35,
+                icon: Icon(Icons.logout_rounded,color: Color.fromARGB(255, 31, 55, 155),size: 35,
                  ), // Specify the icon
                 onPressed: () {
                   var push = Navigator.of(context).pop(
