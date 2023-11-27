@@ -15,7 +15,7 @@ class CartModel extends ChangeNotifier {
   List _cartItems = [];
 
   get cartItems => _cartItems;
-//hello
+
   get shopItems => _shopItems;
 
   // add item to cart
@@ -39,7 +39,7 @@ class CartModel extends ChangeNotifier {
 
       totalPrice += double.parse(cartItems[i][1]);
     }
-    if(counter>= 3)
+    if(counter>= 8)
     return (totalPrice*0.9).toStringAsFixed(2);
     return totalPrice.toStringAsFixed(2);
 
