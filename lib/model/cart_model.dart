@@ -10,7 +10,7 @@ class CartModel extends ChangeNotifier {
     ["Water", "1.00", "water.png", Colors.blue],
 
   ];
-
+  static int counter = 0;
   // list of cart items
   List _cartItems = [];
 
@@ -20,12 +20,14 @@ class CartModel extends ChangeNotifier {
 
   // add item to cart
   void addItemToCart(int index) {
+    counter++;
     _cartItems.add(_shopItems[index]);
     notifyListeners();
   }
 
   // remove item from cart
   void removeItemFromCart(int index) {
+    counter--;
     _cartItems.removeAt(index);
     notifyListeners();
   }
@@ -34,8 +36,12 @@ class CartModel extends ChangeNotifier {
   String calculateTotal() {
     double totalPrice = 0;
     for (int i = 0; i < cartItems.length; i++) {
+
       totalPrice += double.parse(cartItems[i][1]);
     }
+    if(counter>= 3)
+    return (totalPrice*0.9).toStringAsFixed(2);
     return totalPrice.toStringAsFixed(2);
+
   }
 }

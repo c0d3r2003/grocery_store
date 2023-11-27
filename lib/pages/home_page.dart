@@ -95,6 +95,13 @@ class _HomePageState extends State<HomePage> {
 
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 24.0),
+            child: Text('Reminder: After buying more than 8 items you get %10 sale.',style: TextStyle(fontSize: 15, color: Colors.green),),
+          ),
+
+          const SizedBox(height: 24),
+
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 24.0),
             child: Divider(),
           ),
 
