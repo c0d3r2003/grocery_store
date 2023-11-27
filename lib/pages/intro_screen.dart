@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
-import 'home_page.dart';
+import 'login.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -30,11 +30,11 @@ class WelcomeScreen extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               var push = Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => const HomePage(), ));
+                  MaterialPageRoute(builder: (context) => const Login() ));
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 78, 179, 113),
-              padding: const EdgeInsets.symmetric(horizontal: 140, vertical: 20), // Set the button size
+              backgroundColor: const Color.fromARGB(255, 31, 55, 155),
+              padding: const EdgeInsets.symmetric(horizontal: 140, vertical: 25), // Set the button size
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15), // Set the border radius
                 // Set the border color

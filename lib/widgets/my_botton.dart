@@ -11,7 +11,7 @@ ElevatedButton MyButton(
       f();
     },
     style: ElevatedButton.styleFrom(
-      backgroundColor: Color.fromARGB(255, 78, 179, 113),
+      backgroundColor: Color.fromARGB(255, 31, 55, 155),
       padding: EdgeInsets.symmetric(
           horizontal: width, vertical: height), // Set the button size
       shape: RoundedRectangleBorder(

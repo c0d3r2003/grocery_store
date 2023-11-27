@@ -39,13 +39,17 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.only(right: 24.0),
             child: Container(
               padding: EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Icon(
-                Icons.person,
-                color: Colors.grey,
+              // decoration: BoxDecoration(
+              //   color: Colors.grey[200],
+              //   borderRadius: BorderRadius.circular(12),
+              // ),
+              child: IconButton(
+                icon: Icon(Icons.person,color: Color.fromARGB(255, 31, 55, 155),size: 35,
+                 ), // Specify the icon
+                onPressed: () {
+                  var push = Navigator.of(context).pop(
+                      MaterialPageRoute(builder: (context) => const HomePage(), ));
+                },
               ),
             ),
           ),

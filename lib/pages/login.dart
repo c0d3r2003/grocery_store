@@ -33,25 +33,32 @@ class _LoginState extends State<Login> {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
+
       // appBar: AppBar(title: Text('Hell0')),
-      backgroundColor: Color.fromARGB(255, 21, 137, 233),
-      body: Center(
+
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('login-page.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+     child: Center(
           child: Column(
         children: [
+
           SizedBox(
             height: height * 0.05,
           ),
           Container(
-            width: 170,
-            height: height * 0.2,
-            decoration: BoxDecoration(
-              // shape: BoxShape.circle,
-              // color: Colors.white,
-              image: DecorationImage(
-                image: AssetImage('picnic-basket_10457470.png'),
-                fit: BoxFit.cover,
-              ),
-            ),
+            child: Column(children: [
+              SizedBox(height:50),
+             Row(children: [
+               Text(' Welcome',style: TextStyle(fontSize: 60,color:Colors.white,fontWeight: FontWeight.bold),),
+               Text(' Back',style: TextStyle(fontSize: 50,color:Colors.white12),)
+             ],),
+              SizedBox(height:50),
+            ],),
 
             // child: SizedBox(),
           ),
@@ -93,8 +100,9 @@ class _LoginState extends State<Login> {
           // )
         ],
       )),
-    );
-  }
+
+    )
+    ); }
 }
 //   ElevatedButton MyButton(
 //       {required Function f,
