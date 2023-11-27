@@ -15,7 +15,7 @@ class CartModel extends ChangeNotifier {
   List _cartItems = [];
 
   get cartItems => _cartItems;
-
+//hello
   get shopItems => _shopItems;
 
   // add item to cart
